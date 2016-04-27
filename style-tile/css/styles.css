@@ -1,2 +1,35 @@
+/* Colors */
 
+.color-1
+{
+    background: red;
+}
 
+.color-2
+{
+    background: white;
+}
+
+.color-3
+{
+    background: blue;
+}
+
+.color-4
+{
+    background: grey;
+}
+
+/* Textures & Patterns */
+
+.pattern-1
+{
+    background: url("https://lh3.googleusercontent.com/-THRxpN5Qqzo/TvRPQMV-oPI/AAAAAAAAB04/qRVhI8d90SE/s500/ipattern13.jpg");
+    background-size: cover;
+}
+
+.pattern-2
+{
+    background: url("http://www.creativebeacon.com/wp-content/uploads/2013/08/beacon-free-pattern-swatches-05.png");
+    background-size: cover;
+}
