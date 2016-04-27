@@ -17,7 +17,7 @@
 
 .color-4
 {
-    background: grey;
+    background: black;
 }
 
 /* Textures & Patterns */
@@ -38,4 +38,45 @@
 {
    background:url("../img/usa.jpg");
     background-size: cover;
+}
+
+/* Images */
+
+.imagery-1 img
+{
+    width: 300px;
+}
+
+.imagery-2 img
+{
+    width: 300px;
+}
+
+/* Icon */
+
+.icon-1
+{
+    background: url("../img/contact.png");
+    background-size: contain;
+}
+
+.icon-2
+{
+    background: url("../img/home.png");
+    background-size: contain;
+}
+
+.icon-3
+{
+    background: url("../img/search.png");
+    background-size: contain;
+}
+
+/* Navigation */
+
+nav li
+{
+    list-style: none;
+    display: inline-block;
+    background: red;
 }
