@@ -78,5 +78,41 @@ nav li
 {
     list-style: none;
     display: inline-block;
-    background: red;
+    float: left;
+/*
+    height: 25px;
+    width: 100px;
+    margin: 10px;
+*/
 }
+
+nav a:link
+{
+    padding: 10px 20px 5px 20px;
+    margin: 0 10px 0 10px;
+    background: red;
+    color: blue;
+    text-decoration: none;
+    border-bottom: 2px solid blue;
+}
+
+nav a:visited
+{
+    background: red;
+    color: white;
+    border-bottom: 2px solid blue;
+}
+
+nav a:focus
+{
+    border: 10px solid black;
+}
+
+nav a:hover
+{
+    background: white;
+    color: red;
+    border-bottom: 5px solid blue;
+}
+
+
