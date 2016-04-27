@@ -33,3 +33,9 @@
     background: url("http://www.creativebeacon.com/wp-content/uploads/2013/08/beacon-free-pattern-swatches-05.png");
     background-size: cover;
 }
+
+.pattern-3
+{
+   background:url("../img/usa.jpg");
+    background-size: cover;
+}
