@@ -1,4 +1,6 @@
-/* Colors */
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:600,300italic);
+
+/*   Colors     */
 
 .color-1
 {
@@ -20,27 +22,29 @@
     background: #5b2328;
 }
 
-/* Textures & Patterns */
+
+
+/*     Textures & Patterns     */
 
 .pattern-1
 {
-    background: url("https://lh3.googleusercontent.com/-THRxpN5Qqzo/TvRPQMV-oPI/AAAAAAAAB04/qRVhI8d90SE/s500/ipattern13.jpg");
+    background: url("http://thumbs.dreamstime.com/z/succulent-plants-seamless-pattern-background-vector-texture-hand-drawn-doodle-seaweed-32239696.jpg");
     background-size: cover;
 }
 
 .pattern-2
 {
-    background: url("http://www.creativebeacon.com/wp-content/uploads/2013/08/beacon-free-pattern-swatches-05.png");
+    background: url("http://thumbs.dreamstime.com/z/seamless-pattern-crystal-lattice-vector-illustration-36009699.jpg");
     background-size: cover;
 }
 
 .pattern-3
 {
-   background:url("../img/usa.jpg");
+   background:url("http://43ci6u1cc9m72hp4c23z0nf1.wpengine.netdna-cdn.com/wp-content/uploads/2012/05/Screen-Shot-2012-05-21-at-9.40.23-PM.png");
     background-size: cover;
 }
 
-/* Images */
+/*     Images     */
 
 .imagery-1 img
 {
@@ -52,67 +56,66 @@
     width: 300px;
 }
 
-/* Icon */
+.imagery-3 img
+{
+    width: 300px;
+}
+
+/*     Icons     */
 
 .icon-1
 {
-    background: url("../img/contact.png");
+    background: url("");
     background-size: contain;
 }
 
 .icon-2
 {
-    background: url("../img/home.png");
+    background: url("");
     background-size: contain;
 }
 
 .icon-3
 {
-    background: url("../img/search.png");
+    background: url("");
     background-size: contain;
 }
 
-/* Navigation */
+/*     Navigation     */
 
 nav li
 {
     list-style: none;
     display: inline-block;
     float: left;
-/*
-    height: 25px;
-    width: 100px;
     margin: 10px;
-*/
 }
 
-nav a:link
+ul
 {
-    padding: 10px 20px 5px 20px;
-    margin: 0 10px 0 10px;
-    background: red;
-    color: blue;
-    text-decoration: none;
-    border-bottom: 2px solid blue;
+    padding: 0;
 }
 
-nav a:visited
+
+/*    Typography     */
+
+h2, h3, p, nav a
 {
-    background: red;
-    color: white;
-    border-bottom: 2px solid blue;
+    font-family: 'Josefin Slab', serif;
 }
 
-nav a:focus
+p
 {
-    border: 10px solid black;
+    font-weight: 600;
 }
 
-nav a:hover
+h2, h3, nav a
 {
-    background: white;
-    color: red;
-    border-bottom: 5px solid blue;
+    font-style: italic;
 }
 
-
+h1
+{
+/*    font-family: Daniel     */
+    margin-top: 75px;
+}

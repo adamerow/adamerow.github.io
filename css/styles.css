@@ -1,0 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica);
+
+/* quote */
+blockquote
+{
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 0 20px 10px blue;
+    font-family: 'IM Fell Double Pica', serif;
+}
