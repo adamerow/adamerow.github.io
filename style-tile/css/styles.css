@@ -1,25 +1,61 @@
+/*  Fonts   */
+
 @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:600,300italic);
+
+/* Daniel Regular */
+@font-face
+{
+    font-family: 'daniel';
+    src: url('/fonts/Daniel-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Daniel Bold */
+@font-face
+{
+    font-family: 'daniel-bold';
+    src: url('/fonts/Daniel-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
 
 /*   Colors     */
 
+body
+{
+    background: #edecf1;
+}
+
 .color-1
 {
-    background: #c3bd70;
+    background: #65821a;
 }
 
 .color-2
 {
-    background: #667754;
+    background: #a49468;
+    
 }
 
 .color-3
 {
-    background: #7e2938;
+    background: #bc6b12;
 }
 
 .color-4
 {
-    background: #5b2328;
+    background: #803010;
+}
+
+a
+{
+    color: #bc6b12;
+}
+
+a:visited
+{
+    color: #65821a;
 }
 
 
@@ -65,19 +101,19 @@
 
 .icon-1
 {
-    background: url("");
+    background: url("/img/work.png");
     background-size: contain;
 }
 
 .icon-2
 {
-    background: url("");
+    background: url("/img/home.png");
     background-size: contain;
 }
 
 .icon-3
 {
-    background: url("");
+    background: url("/img/email.png");
     background-size: contain;
 }
 
@@ -99,23 +135,52 @@ ul
 
 /*    Typography     */
 
-h2, h3, p, nav a
+/* Josefin */
+p, h3, nav a
 {
     font-family: 'Josefin Slab', serif;
-}
-
-p
-{
     font-weight: 600;
 }
 
-h2, h3, nav a
-{
-    font-style: italic;
-}
-
+/* Daniel */
 h1
 {
-/*    font-family: Daniel     */
-    margin-top: 75px;
+    font-family: 'daniel-bold';
+    margin-top: 100px;
+}
+
+h2
+{
+    font-family: 'daniel';
+}
+
+button, nav li
+{
+    background: transparent;
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #a49468;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+}
+
+button:after, nav li::after {
+    position: absolute;
+    transition: .3s;
+    content: '';
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: #a49468;
+}
+
+button:hover::after, nav li:hover::after
+{
+    width: 100%;
+    left: 0;
 }
