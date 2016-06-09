@@ -1,0 +1,186 @@
+/*  Fonts   */
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:600,300italic);
+
+/* Daniel Regular */
+@font-face
+{
+    font-family: 'daniel';
+    src: url('/fonts/Daniel-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Daniel Bold */
+@font-face
+{
+    font-family: 'daniel-bold';
+    src: url('/fonts/Daniel-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*   Colors     */
+
+body
+{
+    background: #edecf1;
+}
+
+.color-1
+{
+    background: #65821a;
+}
+
+.color-2
+{
+    background: #a49468;
+    
+}
+
+.color-3
+{
+    background: #bc6b12;
+}
+
+.color-4
+{
+    background: #803010;
+}
+
+a
+{
+    color: #bc6b12;
+}
+
+a:visited
+{
+    color: #65821a;
+}
+
+
+
+/*     Textures & Patterns     */
+
+.pattern-1
+{
+    background: url("http://thumbs.dreamstime.com/z/succulent-plants-seamless-pattern-background-vector-texture-hand-drawn-doodle-seaweed-32239696.jpg");
+    background-size: cover;
+}
+
+.pattern-2
+{
+    background: url("http://thumbs.dreamstime.com/z/seamless-pattern-crystal-lattice-vector-illustration-36009699.jpg");
+    background-size: cover;
+}
+
+.pattern-3
+{
+   background:url("http://43ci6u1cc9m72hp4c23z0nf1.wpengine.netdna-cdn.com/wp-content/uploads/2012/05/Screen-Shot-2012-05-21-at-9.40.23-PM.png");
+    background-size: cover;
+}
+
+/*     Images     */
+
+.imagery-1 img
+{
+    width: 300px;
+}
+
+.imagery-2 img
+{
+    width: 300px;
+}
+
+.imagery-3 img
+{
+    width: 300px;
+}
+
+/*     Icons     */
+
+.icon-1
+{
+    background: url("/img/work.png");
+    background-size: contain;
+}
+
+.icon-2
+{
+    background: url("/img/home.png");
+    background-size: contain;
+}
+
+.icon-3
+{
+    background: url("/img/email.png");
+    background-size: contain;
+}
+
+/*     Navigation     */
+
+nav li
+{
+    list-style: none;
+    display: inline-block;
+    float: left;
+    margin: 10px;
+}
+
+ul
+{
+    padding: 0;
+}
+
+
+/*    Typography     */
+
+/* Josefin */
+p, h3, nav a
+{
+    font-family: 'Josefin Slab', serif;
+    font-weight: 600;
+}
+
+/* Daniel */
+h1
+{
+    font-family: 'daniel-bold';
+    margin-top: 100px;
+}
+
+h2
+{
+    font-family: 'daniel';
+}
+
+button, nav li
+{
+    background: transparent;
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #a49468;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+}
+
+button:after, nav li::after {
+    position: absolute;
+    transition: .3s;
+    content: '';
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: #a49468;
+}
+
+button:hover::after, nav li:hover::after
+{
+    width: 100%;
+    left: 0;
+}
