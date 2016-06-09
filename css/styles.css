@@ -1,10 +1,150 @@
+/*  Fonts   */
+
 @import url(https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica);
 
-/* quote */
-blockquote
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:600,300italic);
+
+/* Daniel Regular */
+@font-face
 {
+    font-family: 'daniel';
+    src: url('/fonts/Daniel-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Daniel Bold */
+@font-face
+{
+    font-family: 'daniel-bold';
+    src: url('/fonts/Daniel-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+/* HEADER */
+html,body
+{
+  text-align:center;
+}
+
+h1
+{
+    display: inline-block;
+    line-height: 50px;
     font-size: 2em;
+    margin: 10px;
+}
+
+header
+{
+  background:#65821a;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+
+
+/*   Colors     */
+
+/*
+#edecf1;
+#65821a;
+#a49468;
+#bc6b12;
+#803010;
+*/
+
+a
+{
+    color: #bc6b12;
+}
+
+a:visited
+{
+    color: #803010;
+}
+
+
+
+
+
+/*     Navigation     */
+
+nav li
+{
+    list-style: none;
+    display: inline-block;
+    float: left;
+    margin: 10px;
+}
+
+ul
+{
+    padding: 0;
+    list-style: none;
+}
+
+
+
+
+
+
+/*    Typography     */
+
+/* Josefin */
+p, h3, nav a, button, li
+{
+    font-family: 'Josefin Slab', serif;
+    font-weight: 600;
+}
+
+/* Daniel */
+h1
+{
+    font-family: 'daniel-bold';
+}
+
+h2
+{
+    font-family: 'daniel';
+}
+
+
+
+
+
+/* BUTTON & NAVIGATION */
+
+button, nav li
+{
+    background: transparent;
+    flex: 1 1 auto;
+    padding: 10px;
+    border: 2px solid #65821a;
     text-align: center;
-    text-shadow: 0 20px 10px blue;
-    font-family: 'IM Fell Double Pica', serif;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+}
+
+button:after, nav li::after {
+    position: absolute;
+    transition: .3s;
+    content: '';
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: #65821a;
+}
+
+button:hover::after, nav li:hover::after
+{
+    width: 100%;
+    left: 0;
 }

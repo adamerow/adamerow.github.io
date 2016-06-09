@@ -1,0 +1,141 @@
+/* ICONS */
+
+.icon div
+{
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    background: black;
+    position: relative;
+    display: inline-block;
+    margin: 0 0 10px 10px;
+}
+
+.icon:nth-child(2) div img
+{
+    position: absolute;
+    left: -75px;
+    top: -20px;
+    width: 150%;
+}
+
+.icon:nth-child(3) div img
+{
+    position: absolute;
+    left: -175px;
+    bottom: -256px;
+    width: 351%;
+}
+
+.icon:nth-child(4) div img
+{
+    position: absolute;
+    right: -242px;
+    top: -20px;
+    width: 400%;
+}
+
+.icon:nth-child(5) div img
+{
+    position: absolute;
+    left: -175px;
+    width: 225%;
+}
+
+.icon:nth-child(6) div img
+{
+    position: absolute;
+    left: -75px;
+    top: 50px;
+    width: 170%;
+}
+
+.icon:nth-child(7) div img
+{
+    position: absolute;
+    left: -105px;
+    bottom: 0px;
+    width: 170%;
+}
+
+
+/* HEADER */
+html,body
+{
+  text-align:center;
+}
+
+h1
+{
+    display: block;
+    line-height: 50px;
+    font-size: 2em;
+    margin: 10px;
+}
+
+button
+{
+    margin: 0 auto;
+    display: block;
+    width: 250px;
+}
+
+header
+{
+  background:#a49468;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+
+
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+	/** Pad the lightbox image */
+    width: auto;
+	max-height: 90%;
+	margin-top: 2%;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+
+
+
+/* TRANSITIONS */
+
+.icon div img
+{
+    -webkit-filter: grayscale(70%);
+    filter: grayscale(70%);
+    transition: filter, .5s;
+}
+
+.icon div img:hover
+{
+    
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
